@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class ContadorScript : MonoBehaviour
 {
-    [SerializeField] Text MyText;
-    [SerializeField] float speed;
+    [SerializeField] Text TextContador;
     
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("Contador");
+
     }
     
     // Update is called once per frame
@@ -20,7 +19,7 @@ public class ContadorScript : MonoBehaviour
         {
             for (int n = 0; ; n++)
             {
-                MyText.text = "Tiempo de juego transcurrido: " + n + "s";
+                TextContador.text = "Tiempo de juego transcurrido: " + n + "s";
              }
         }
      }
