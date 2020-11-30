@@ -31,7 +31,7 @@ public class ContadorScript : MonoBehaviour
             for (int n = 0; n < 10; n++)
             {
                
-                yield return new WaitForSeconds(speed);
+                yield return new WaitForSeconds(1f);
             }
         }
     }
