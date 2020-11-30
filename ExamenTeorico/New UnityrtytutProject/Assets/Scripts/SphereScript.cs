@@ -25,4 +25,16 @@ public class SphereScript : MonoBehaviour
 
         transform.Translate(Vector3.left * desplX * Time.deltaTime);
     }
+
+    private void OnTriggerEnter (Colisions cylinders)
+    
+    {
+        if(other.gameObject.tag == "Obstáculo")
+        
+        {
+            Destroy (gameObject);
+        }
+
+
+    }
 }
