@@ -6,7 +6,7 @@ public class CylinderScript : MonoBehaviour
 {
 
     [SerializeField] GameObject CylinderPrefab;
-    [SerializeField] Transform InitPos;
+ //   [SerializeField] Transform InitPos;
 
     Vector3 NewPos;
 
@@ -14,6 +14,7 @@ public class CylinderScript : MonoBehaviour
    // Start is called before the first frame update
     void Start()
     {
+        /*
         int y = 0;
 
         for (int n = 0; n < 10; n++)
@@ -25,6 +26,6 @@ public class CylinderScript : MonoBehaviour
 
             y += 2; //Por cada vuelta de ciclo, suma 2 a la vaiable y.
         }
-        
+       */ 
     }
 }

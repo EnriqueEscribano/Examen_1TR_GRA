@@ -16,13 +16,11 @@ public class ContadorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         while (true)
-        {
             for (int n = 0; ; n++)
             {
                 TextContador.text = "Tiempo de juego transcurrido: " + n + "s";
              }
-        }
+       
      }
             
 }
