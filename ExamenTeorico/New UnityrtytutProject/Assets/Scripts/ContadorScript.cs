@@ -6,20 +6,21 @@ using UnityEngine.UI;
 public class ContadorScript : MonoBehaviour
 {
     [SerializeField] Text TextContador;
-    
+
     // Start is called before the first frame update
+    // No sé como hacer para que al iniciar el contador cuente para siempre sin crear un bucvle infinito
     void Start()
     {
-
+        for (int n = 0; ; n++)
+        {
+            TextContador.text = "Tiempo de juego transcurrido: " + n + "s";
+        }
     }
     
     // Update is called once per frame
     void Update()
     {
-            for (int n = 0; ; n++)
-            {
-                TextContador.text = "Tiempo de juego transcurrido: " + n + "s";
-             }
+            
        
      }
             
