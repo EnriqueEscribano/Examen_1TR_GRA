@@ -28,4 +28,15 @@ public class CylinderScript : MonoBehaviour
         }
        */ 
     }
+    private void OnTriggerEnter(Collider other)
+
+    {
+        if (other.gameObject.tag == "Jugador")
+
+        {
+            Destroy(gameObject);
+        }
+
+
+    }
 }
